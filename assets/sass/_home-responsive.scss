@@ -1,0 +1,36 @@
+//default
+@media (min-width: 1450px) {
+  .container {
+    width: 1366px;
+    margin: auto;
+  }
+}
+
+
+@media(max-width: 768px) {
+  .mbp45 {
+    padding: 45px 0 !important;
+  }
+}
+
+@media(max-width: 767px) {
+  .pt75, .pt90, .pt95, .pt60,.pt120 {
+    padding-top: 50px !important;
+  }
+  .pb75, .pb90, .pb95, .pb60,.pb120 {
+    padding-bottom: 50px !important;
+  }
+  .Title {
+    font-size: 23px;
+    line-height: 25px;
+  }
+
+  .slick-dots li button:before {
+    font-size: 11px;
+  }
+
+
+}
+
+//--------------end of default
+
