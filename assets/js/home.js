@@ -267,3 +267,17 @@ function deviceImage() {
 deviceImage();
 
 
+//============= Slick Slider
+if ($('.featured-projects__img__slick').length>0){
+    $('.featured-projects__img__slick').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        // autoplay: true,
+        // autoplaySpeed: 2000,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next')
+    });
+}
+
+
