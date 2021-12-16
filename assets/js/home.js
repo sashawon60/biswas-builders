@@ -273,10 +273,60 @@ if ($('.featured-projects__img__slick').length>0){
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
-        // autoplay: true,
-        // autoplaySpeed: 2000,
-        prevArrow: $('.prev'),
-        nextArrow: $('.next')
+        autoplay: true,
+        autoplaySpeed: 2000,
+        prevArrow: $('.featured-prev'),
+        nextArrow: $('.featured-next'),
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    });
+}
+
+if ($('.achievements-projects__img__slick').length>0){
+    $('.achievements-projects__img__slick').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        prevArrow: $('.achievements-prev'),
+        nextArrow: $('.achievements-next'),
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
     });
 }
 
